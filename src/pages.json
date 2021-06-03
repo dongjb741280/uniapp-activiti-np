@@ -1,0 +1,267 @@
+{
+    "pages": [
+        {
+            "path": "pages/index",
+            "style": {
+                "enablePullDownRefresh": true
+            }
+        },
+        {
+            "path": "apps/apps",
+            "style": {}
+        },
+        {
+            "path": "mine/mine",
+            "style": {}
+        },
+        {
+            "path": "mine/mine-info",
+            "style": {}
+        },
+        {
+            "path": "contacts/index",
+            "style": {}
+        },
+        {
+            "path": "message/list",
+            "style": {
+                "enablePullDownRefresh": true
+            }
+        },
+        {
+            "path": "attendance-record/attendance-record",
+            "style": {
+            }
+        },
+        {
+            "path": "message/detail",
+            "style": {}
+        },
+        {
+            "path": "contacts/contacts",
+            "style": {}
+        },
+        {
+            "path": "pages/splash",
+            "style": {}
+        },
+        {
+            "path": "pages/login",
+            "style": {}
+        },
+        {
+            "path": "pages/webview",
+            "style": {}
+        },
+        {
+            "path": "pages/search",
+            "style": {}
+        },
+        {
+            "path": "public-affiars/becoming",
+            "style": {
+                "enablePullDownRefresh": true
+            }
+        },
+        {
+            "path": "public-affiars/following",
+            "style": {
+                "enablePullDownRefresh": true
+            }
+        },
+        {
+            "path": "public-affiars/robot",
+            "style": {
+                "enablePullDownRefresh": true
+            }
+        }
+    ],
+    "subPackages": [
+        {
+            "root": "contacts",
+            "pages": [
+                {
+                    "path": "contacts",
+                    "style": {
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "detail",
+                    "style": {}
+                }
+            ]
+        },
+        {
+            "root": "supervise",
+            "pages": [
+                {
+                    "path": "list",
+                    "style": {
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "detail",
+                    "style": {}
+                }
+            ]
+        },
+        {
+            "root": "dm",
+            "pages": [
+                {
+                    "path": "dm-query/list",
+                    "style": {
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "dm-query/detail",
+                    "style": {}
+                },
+                {
+                    "path": "dm-case/list",
+                    "style": {
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "dm-case/detail",
+                    "style": {}
+                }
+            ]
+        },
+        {
+            "root": "notice",
+            "pages": [
+                {
+                    "path": "list",
+                    "style": {
+                        "enablePullDownRefresh": true
+                    }
+                }
+            ]
+        },
+        {
+            "root": "message",
+            "pages": [
+                {
+                    "path": "list",
+                    "style": {
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "detail",
+                    "style": {}
+                }
+            ]
+        },
+        {
+            "root": "meeting",
+            "pages": [
+                {
+                    "path": "meeting-scheduled",
+                    "style": {}
+                },
+                {
+                    "path": "meeting-list",
+                    "style": {
+                        "enablePullDownRefresh": true
+                    }
+                }
+            ]
+        },
+        {
+            "root": "payment",
+            "pages": [
+                {
+                    "path": "mine",
+                    "style": {
+                        "enablePullDownRefresh": true
+                    }
+                },
+                {
+                    "path": "mine-lx",
+                    "style": {}
+                },
+                {
+                    "path": "mine-cl",
+                    "style": {}
+                },
+                {
+                    "path": "mine-cl-detail",
+                    "style": {}
+                }
+            ]
+        }
+    ],
+    "preloadRule": {
+        "payment/mine": {
+            "network": "all",
+            "packages": ["payment"]
+        },
+        "message/list": {
+            "network": "all",
+            "packages": ["message"]
+        },
+        "contacts/index": {
+            "network": "all",
+            "packages": ["contacts"]
+        }
+    },
+    "globalStyle": {
+        "backgroundColor": "#ffffff",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black",
+        "app-plus": {
+            "scrollIndicator": "none",
+            "titleNView": false,
+            "backgroundColorTop": "#f5f5f5",
+            "backgroundColorBottom": "#f5f5f5",
+            "pullToRefresh": {
+                "support": true,
+                "style": "circle",
+                "color": "#1e9fff",
+                "offset": "100px"
+            }
+        },
+        "navigationStyle": "custom"
+    },
+    "easycom": {
+        "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+    },
+    "tabBar": {
+        "color": "#8e8e8e",
+        "selectedColor": "#1e9fff",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index",
+                "iconPath": "static/home.png",
+                "selectedIconPath": "static/home-on.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "apps/apps",
+                "iconPath": "static/apps.png",
+                "selectedIconPath": "static/apps-on.png",
+                "text": "应用"
+            },
+            {
+                "pagePath": "contacts/index",
+                "iconPath": "static/contacts.png",
+                "selectedIconPath": "static/contacts-on.png",
+                "text": "通讯录"
+            },
+            {
+                "pagePath": "mine/mine",
+                "iconPath": "static/mine.png",
+                "selectedIconPath": "static/mine-on.png",
+                "text": "我的"
+            }
+        ]
+    }
+}

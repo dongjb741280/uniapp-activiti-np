@@ -1,0 +1,93 @@
+.gray-bg{
+	width: 100%;
+	background: #f2f2f2;
+	min-height: 100vh;
+}
+.tab-header{
+	background: white;
+	color: $u-content-color;
+	margin-bottom: 16px;
+	.time{
+		margin-top: -6rpx;
+		border-top: 4rpx solid #dddddd;
+		padding: 16rpx 10rpx;
+		border-bottom: 1px solid #dddddd;
+		.time-item{
+			height: 54rpx;
+			padding: 0 30rpx;
+			border-radius: 8px;
+			border: 1px solid #dddddd;
+			box-shadow: inset 0px 2px 4px -3px #000;
+		}
+	}
+	.payment-list{
+		border-top: 1px solid #dddddd;
+		border-bottom: 1px solid #dddddd;
+	}
+}
+
+.collapse{
+	background: white;
+	color: $u-content-color;
+	.collapse-item{
+		.head{
+			height: 66rpx;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: #f2f2f2;
+			padding: 0 30rpx;
+			border-bottom: 1px solid #dddddd;
+		}
+		.body{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			border-bottom: 1px solid #dddddd;
+			margin-bottom: -1px;
+			overflow: hidden;
+			height: auto;
+			transition: all 0.5s;
+			.collapse-cell {
+				flex: 0 1 50%;
+				height: 98rpx;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				border-bottom: 1px solid #dddddd;
+				text:first-child{
+					font-size: 30rpx;
+					padding-left: 30rpx;
+				}
+				text:last-child{
+					font-size: 26rpx;
+					color: $u-tips-color;
+					padding-right: 30rpx;
+				}
+				// &:last-child{
+				// 	border: 0;
+				// }
+				&-line{
+					flex: 0 1 100%;
+				}
+			}
+		}
+	}
+}
+.total-fee{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 30rpx;
+	background: white;
+	& view:first-child{
+		color: #000;
+	}
+	& view:last-child{
+		color: $--color-deep;
+	}
+}

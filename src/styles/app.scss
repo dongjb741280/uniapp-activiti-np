@@ -1,0 +1,65 @@
+
+@import './base';
+@import './icon';
+body{
+    min-height: 100%;
+    display: flex;
+    page {
+        min-height: 100%;
+        display: flex;
+        width: 100%;
+    }
+    uni-page{
+        min-height: 100%;
+        display: flex;height: auto;
+    }
+    uni-page-wrapper,uni-page-body{
+        width: 100%;
+    }
+}
+::-webkit-scrollbar {  
+    display: none;  
+    width: 0 !important;  
+    height: 0 !important;  
+    -webkit-appearance: none;  
+    background: transparent;  
+}
+
+
+.contacts-wrapper{
+    .u-index-anchor--active{
+        background-color: whitesmoke !important;
+    }
+}
+
+
+
+.contacts-item{
+    width: 100%;display: flex;padding:20rpx 0;height: 220rpx;
+    .avatar-wrapper{
+        width: 166rpx;display: flex;justify-content: center;align-items: center;height: 100%;flex-direction: column;
+        .name{
+            line-height: 40rpx;margin-top: 10rpx;font-size: 28rpx;
+        }
+        .no{
+            font-size: 28rpx;
+        }
+    }
+    .item-content{
+        flex: 1;
+        display: flex;flex-direction: column;
+        .line{
+            line-height: 44rpx;font-size: 24rpx;color: $u-content-color;
+        }
+    }
+    .handle-wrapper{
+        height: 100%;display: flex;align-items: center;padding-right: 30rpx;
+        
+    }
+    &::after{
+        width: calc(199.8% - 30rpx);left: 30rpx;
+    }
+    &:last-child::after{
+        display: none;
+    }
+}
