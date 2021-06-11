@@ -11,18 +11,18 @@ let env = process.env.NODE_ENV,
 if (platform === 'h5') {
     if (env === 'production') {
         if (process.env.VUE_APP_RUN_ENV === 'prepare') {
-            APIURL = 'http://88htvw.natappfree.cc';
+            APIURL = 'http://localhost:5555';
         } else {
-            APIURL = 'http://88htvw.natappfree.cc';
+            APIURL = 'http://localhost:5555';
         }
     } else {
-        APIURL = 'http://88htvw.natappfree.cc';
+        APIURL = 'http://localhost:5555';
     }
 } else {
     if (env === 'production') {
-        APIURL = 'http://88htvw.natappfree.cc';
+        APIURL = 'http://localhost:5555';
     } else {
-        APIURL = 'http://88htvw.natappfree.cc';
+        APIURL = 'http://localhost:5555';
     }
 };
 const userInfo = uni.getStorageSync('userInfo'),

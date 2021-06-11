@@ -8,7 +8,7 @@
             v-if="listData && listData.length==0"
         ></u-empty>
         <view class="thing-list">
-            <affiars-item type="1" :curtype="current" :foolwing="false" :item="item" v-for="item in listData" :key="item.type"></affiars-item>
+            <affiars-item type="1" :curtype="current" :foolwing="false" :item="item" v-for="(item, index) in listData" :key="index"></affiars-item>
         </view>
         <u-loadmore
 			:status="status"

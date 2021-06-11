@@ -31,7 +31,8 @@
                 <Steps :list="item.taskList" name="dealUserName" time="dealTime" :current="curStep" mode="number"></Steps>
             </view>
             <view class="foot">
-                <block v-if="item.applyTitle == '财务管理系统-报销申请' && foolwing && curtype == 0">
+                <!-- <block v-if="item.applyTitle == '财务管理系统-报销申请' && foolwing && curtype == 0"> -->
+                <block v-if="1 == 1 && foolwing && curtype == 0">
                     <view class="btn-group u-flex">
                         <u-button type="primary" size="small" plain @click="showModal('1')">通过</u-button>
                         <u-button type="warning" size="small" plain @click="showModal('0')">拒绝</u-button>
