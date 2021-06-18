@@ -29,7 +29,8 @@
                 :style="{ borderBottomWidth: type == '2' ? 0 : 1 }"
             >
                 <!-- <view class="welcome">主人，这是已经处理好的</view> -->
-                <view class="welcome">主人，您有一条待办事项</view>
+                <view v-if="curtype == '0'" class="welcome">主人，您有一条待办事项</view>
+                <view v-else class="welcome">主人，您有一条已办事项</view>
                 <view class="title">{{ item.applyTitle }}</view>
             </view>
             <view class="body" v-if="!item.taskList">
