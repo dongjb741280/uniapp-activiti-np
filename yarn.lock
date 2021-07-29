@@ -14,7 +14,7 @@
   "resolved" "https://registry.npm.taobao.org/@babel/compat-data/download/@babel/compat-data-7.12.7.tgz?cache=0&sync_timestamp=1605904577108&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fcompat-data%2Fdownload%2F%40babel%2Fcompat-data-7.12.7.tgz"
   "version" "7.12.7"
 
-"@babel/core@*", "@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.1.0", "@babel/core@^7.11.0", "@babel/core@^7.3.3", "@babel/core@^7.3.4", "@babel/core@^7.7.5":
+"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.1.0", "@babel/core@^7.11.0", "@babel/core@^7.3.3", "@babel/core@^7.3.4", "@babel/core@^7.7.5":
   "integrity" "sha1-t5ouG59w7T2Eu/ttjE74JfYGvM0="
   "resolved" "https://registry.npm.taobao.org/@babel/core/download/@babel/core-7.12.10.tgz?cache=0&sync_timestamp=1607568965941&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fcore%2Fdownload%2F%40babel%2Fcore-7.12.10.tgz"
   "version" "7.12.10"
@@ -4069,7 +4069,7 @@
     "browserslist" "^4.16.0"
     "semver" "7.0.0"
 
-"core-js@^3", "core-js@^3.4.1", "core-js@^3.6.5":
+"core-js@^3.4.1", "core-js@^3.6.5":
   "integrity" "sha1-Ch/WcJJG2pyo7/W7DL0V+6mscEQ= sha512-FfApuSRgrR6G5s58casCBd9M2k+4ikuu4wbW6pJyYU7bd9zvFc9qf7vr5xmrZOhT9nn+8uwlH1oRR9jTnFoA3A=="
   "resolved" "https://registry.npm.taobao.org/core-js/download/core-js-3.8.2.tgz?cache=0&sync_timestamp=1609682080903&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-3.8.2.tgz"
   "version" "3.8.2"
