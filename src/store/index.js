@@ -8,21 +8,22 @@ let env = process.env.NODE_ENV,
     platform = process.env.VUE_APP_PLATFORM,
     basePath = 'mz-server',
     APIURL;
+//测试 http://localhost:5555 
 if (platform === 'h5') {
     if (env === 'production') {
         if (process.env.VUE_APP_RUN_ENV === 'prepare') {
-            APIURL = 'http://localhost:5555';
+            APIURL = 'http://39.101.64.162';
         } else {
-            APIURL = 'http://localhost:5555';
+            APIURL = 'http://39.101.64.162';
         }
     } else {
-        APIURL = 'http://localhost:5555';
+        APIURL = 'http://39.101.64.162';
     }
 } else {
     if (env === 'production') {
-        APIURL = 'http://localhost:5555';
+        APIURL = 'http://39.101.64.162';
     } else {
-        APIURL = 'http://localhost:5555';
+        APIURL = 'http://39.101.64.162';
     }
 };
 const userInfo = uni.getStorageSync('userInfo'),
