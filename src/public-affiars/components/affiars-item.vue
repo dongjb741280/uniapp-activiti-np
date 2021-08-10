@@ -47,13 +47,21 @@
                 style="background: #f4f4f4;"
                 v-if="item.taskList"
             >
-                <Steps
+                <!-- <Steps
                     :list="item.taskList"
                     name="dealUserName"
                     time="dealTime"
                     :current="curStep"
                     mode="number"
-                ></Steps>
+                ></Steps> -->
+                <view class="line">
+                    <view class="label">当前节点：</view>
+                    <view class="val">{{curNode}}</view>
+                </view>
+                <view class="line">
+                    <view class="label">提交时间：</view>
+                    <view class="val">{{arriveTime}}</view>
+                </view>
             </view>
             <view class="foot">
                 <!-- <block v-if="item.applyTitle == '财务管理系统-报销申请' && foolwing && curtype == 0"> -->
@@ -116,7 +124,33 @@ export default {
             if (this.item.taskList) {
                 return this.item.taskList.findIndex(ele => ele.status == 1);
             }
-        }
+        },
+        curNode() {
+            if (this.item.taskList) {
+              let indx = this.item.taskList.findIndex(ele => !ele.dealTime && !!ele.arriveTime);
+              let node;
+              if(indx > -1){
+                node = this.item.taskList[indx];
+              }else{
+                node = this.item.taskList[this.item.taskList.length-1];
+              }
+              let nodename = node.taskDefName;
+              return nodename;
+            }
+        },
+        arriveTime() {
+            if (this.item.taskList) {
+              let indx = this.item.taskList.findIndex(ele => !ele.dealTime && !!ele.arriveTime);
+              let node;
+              if(indx > -1){
+                node = this.item.taskList[indx];
+              }else{
+                node = this.item.taskList[this.item.taskList.length-1];
+              }
+              let time = node.arriveTime;
+              return time;
+            }
+        },
     },
     data() {
         return {
